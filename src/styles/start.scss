@@ -1,0 +1,40 @@
+@import "variables";
+
+.start{
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 129px;
+}
+.start__left{
+  width: 50%;
+}
+.start-left__first-line{
+  display: flex;
+  align-items: center;
+  margin-top: 67px;
+  line-height: 80px;
+  h1{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 64px;
+  }
+  img{
+    width: 85px;
+    height: 85px;
+    margin-left: 38px;
+  }
+}
+.start-left__second-line{
+  font-weight: 400;
+  font-size: 24px;
+  color: #8F95A5;
+  margin: 40px 0 61px 0;
+}
+.start__right{
+  width: 50%;
+
+  img{
+
+  }
+}

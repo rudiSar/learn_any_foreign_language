@@ -1,0 +1,22 @@
+@import "mixins";
+@import "variables";
+
+.about{
+  width: $width_pc;
+  @include section_h2;
+  display: flex;
+  &__left{
+    width: 50%;
+    p{
+      color: #8F95A5;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+      margin: 23px 0 38px 130px;
+    }
+  }
+  &__right{
+    width: 50%;
+  }
+}

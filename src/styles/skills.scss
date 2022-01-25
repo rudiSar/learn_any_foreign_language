@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixins";
+
+$bg_card: #F5F5F5;
+@mixin title_h3{
+  font-weight: 600;
+  font-size: 30px;
+  text-align: left;
+  color: #263238;
+}
+@mixin card{
+  padding: 0 35px;
+  border-radius: 10px;
+}
+.skills{
+  width: $width_pc;
+  &__title{
+    @include section_h2;
+  }
+  &__grid{
+    @include title_h3;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:  "speak write read"
+                          "speak listen listen";
+    .skills-grid__speaking{
+      @include card;
+      background-color: $bg_card;
+      grid-area: speak;
+      margin-left: 127px;
+      height: 894px;
+      width: 435px;
+      img{
+        margin: 20px 0;
+        width: 390px;
+        height: 390px;
+      }
+    }
+    .skills-grid__writing{
+      @include card;
+      background-color: $bg_card;
+      grid-area: write;
+      height: 570px;
+      width: 435px;
+      img{
+        width: 293px;
+        height: 293px;
+        margin-left: 100px;
+      }
+    }
+    .skills-grid__reading{
+      @include card;
+      background-color: $bg_card;
+      grid-area: read;
+      margin-right: 127px;
+      height: 570px;
+      width: 435px;
+      img{
+        width: 371px;
+        height: 293px;
+      }
+    }
+    .skills-grid__listening{
+      @include card;
+      background-color: $bg_card;
+      grid-area: listen;
+      margin-right: 127px;
+      padding-top: 43px;
+      display: flex;
+      justify-content: space-between;
+      img{
+        width: 382px;
+        height: 255px;
+      }
+    }
+    p{
+      font-weight: 400;
+      font-size: 16px;
+      margin-top: 15px;
+      color: #8F95A5;
+      margin-bottom: 33px;
+    }
+  }
+}
