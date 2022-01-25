@@ -1,0 +1,14 @@
+.simple-button{
+  background-color: #263238;
+  border: none;
+  color: white;
+  font-size: 36px;
+  font-weight: 400;
+  border-radius: 15px;
+  transition: .15s;
+  &:hover{
+    background-color: white;
+    color: #263238;
+    border: 2px solid  #263238;
+  }
+}
