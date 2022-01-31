@@ -3,8 +3,15 @@
 
 .about{
   width: $width_pc;
-  @include section_h2;
   display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+
+  &-left__title{
+    @include section_h2;
+    margin: 0 0 0 130px;
+    text-align: left;
+  }
   &__left{
     width: 50%;
     p{
@@ -15,8 +22,33 @@
       text-align: left;
       margin: 23px 0 38px 130px;
     }
+    .stats{
+      margin-left: 130px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      .stat{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        h3{
+          font-size: 48px;
+          font-weight: 600;
+          line-height: 80px;
+        }
+        p{
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 30px;
+          margin-left: 0;
+          text-align: center;
+        }
+      }
+    }
   }
   &__right{
     width: 50%;
+    text-align: right;
+    padding-right: 130px;
   }
 }

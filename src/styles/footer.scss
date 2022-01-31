@@ -1,0 +1,27 @@
+@import "mixins";
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 130px;
+  border-top: 1px solid #C4C4C4;
+  padding: 30px 0;
+  &__left{
+    .logo{
+      @include logo;
+    }
+  }
+  &__right{
+    a, span{
+      text-decoration: none;
+      font-size: 24px;
+      line-height: 36px;
+      font-weight: 400;
+      color: #8F95A5;
+      vertical-align: center;
+    }
+    a:hover{
+      text-decoration: underline;
+    }
+  }
+}

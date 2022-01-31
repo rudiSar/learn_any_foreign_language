@@ -1,17 +1,15 @@
 @import "variables";
+@import "mixins";
 
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 180px;
   padding: 55px 129px;
 }
 .header__logo{
-  font-weight: 400;
-  font-size: 36px;
-  span{
-    color: #939393;
-  }
+  @include logo;
 }
 .header__links{
   font-weight: 500;

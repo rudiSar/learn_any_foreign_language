@@ -11,6 +11,7 @@
 }
 
 .App{
+  box-sizing: border-box;
   width: $width_pc;
   margin: 0 auto;
 }

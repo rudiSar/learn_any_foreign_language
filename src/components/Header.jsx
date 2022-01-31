@@ -4,7 +4,7 @@ import "../styles/header.scss"
 const Header = () => {
     return (
         <header className={"header"}>
-            <p className={"header__logo header-logo"}>
+            <p className={"header__logo"}>
                 Brit<span>lex</span>
             </p>
             <div className="header__links">
